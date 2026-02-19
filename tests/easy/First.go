@@ -4,6 +4,7 @@ import "fmt"
 
 type First struct {
 	IsComplete int
+	Name       string
 	Descr      string
 }
 

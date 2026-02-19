@@ -14,6 +14,7 @@ type Test interface {
 
 var easytests = map[string]Test{
 	"first": &easy.First{},
+	"LPxAa": easy.LPxAaInit(),
 }
 var mediumtests = map[string]Test{}
 var hardtests = map[string]Test{}

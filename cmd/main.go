@@ -12,7 +12,6 @@ func main() {
 	task := ""
 	fmt.Print("Введите команду: ")
 	fmt.Scanln(&command, &grade, &task)
-	fmt.Print(command, grade, task)
 	switch command {
 	case "Run":
 		error := tests.Run(grade, task)
