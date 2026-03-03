@@ -6,6 +6,8 @@ import (
 	"time"
 
 	"github.com/amenshenin/go-leet-code/tests/easy"
+	"github.com/amenshenin/go-leet-code/tests/hard"
+	"github.com/amenshenin/go-leet-code/tests/medium"
 )
 
 type Test interface {
@@ -15,9 +17,14 @@ type Test interface {
 var easytests = map[string]Test{
 	"first": &easy.First{},
 	"LPxAa": easy.LPxAaInit(),
+	"LXW6Z": easy.LXW6ZInit(),
 }
-var mediumtests = map[string]Test{}
-var hardtests = map[string]Test{}
+var mediumtests = map[string]Test{
+	"Y7FRc": medium.Y7FRcInit(),
+}
+var hardtests = map[string]Test{
+	"Lf9p7": hard.Lf9p7Init(),
+}
 
 func Run(grade string, name string) error {
 	source, error := getGrade(grade)
